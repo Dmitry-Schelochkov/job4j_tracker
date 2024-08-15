@@ -3,8 +3,8 @@ package ru.job4j.oop;
 public class Calculator {
     private static int x = 5;
 
-    public static int sum(int y) {
-        return x + y;
+    public static int sum(int p) {
+        return x + p;
     }
 
     public int multiply(int a) {
@@ -19,8 +19,8 @@ public class Calculator {
         return q / x;
     }
 
-    public int sumAllOperation(int y, int a, int z, int q) {
-        return sum(y) + multiply(a) + minus(z) + divide(q);
+    public int sumAllOperation(int y) {
+        return sum(y) + multiply(y) + minus(y) + divide(y);
     }
 
     public static void main(String[] args) {
@@ -33,7 +33,7 @@ public class Calculator {
         System.out.println(minusres);
         int dividedres = calculator.divide(15);
         System.out.println(dividedres);
-        int sumall = calculator.sumAllOperation(10, 3, 8, 15);
+        int sumall = calculator.sumAllOperation(10);
         System.out.println(sumall);
     }
 }
