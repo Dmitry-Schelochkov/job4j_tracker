@@ -20,9 +20,9 @@ public class Tracker {
     public Item[] findByName(String key) {
         int number = 0;
         Item[] result = new Item[items.length];
-        for (int i = 0; i < items.length; i++) {
-            if (items[i] != null && items[i].getName().equals(key)) {
-                result[i] = items[i];
+        for (int i = 0; i < size; i++) {
+            if (items[i].getName().equals(key)) {
+                result[number] = items[i];
                 number++;
             }
         }
